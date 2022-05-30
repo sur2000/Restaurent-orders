@@ -1,6 +1,7 @@
 import React from 'react' 
 import {BarChart, SearchRounded, ShoppingCartRounded} from "@mui/icons-material";
 import logo from '../assets/favicon.png'
+import profile from '../assets/girl.jpg'
 
 
 const Header = () => {
@@ -16,14 +17,14 @@ const Header = () => {
       <div className="shoppingCart">
         <ShoppingCartRounded className="cart" />
         <div className="cart_content">
-          <p>5</p>
+          <p> 5 </p>
         </div>
       </div>
 
       <div className="profileContainer">
         <div className="imgBox">
           <img
-            src="" alt='' />
+            src={profile} alt='' />
         </div>
         <h2 className="userName">Saya Otonashi</h2>
       </div>

@@ -37,8 +37,7 @@ function ItemCard({ itemId, imgSrc, name, price, ratings }) {
 
       <div className="imgBox">
         <img src={imgSrc} alt="" className="itemImg" />
-      </div>
-
+      </div> 
       <div className="itemContent">
         <h3 className="itemName">{name}</h3>
         <div className="bottom">

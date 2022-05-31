@@ -9,7 +9,7 @@ function BannerName({ name, discount, more }) {
         Get free discount for every <span>{`${currency}${discount}`}</span>{" "}
         purchase
       </p>
-      <a href={more}>Learn More</a>
+      <a href={more}>Keep Eating</a>
     </div>
   );
 }

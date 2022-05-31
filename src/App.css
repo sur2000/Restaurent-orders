@@ -390,9 +390,9 @@ main {
 }
 
 .rowMenuCard {
-  width: 80px;
+  width: 90px;
   min-width: 80px;
-  height: 100px;
+  height: 110px;
   border-radius: 10px;
   background: #fff;
   margin-right: 12px;
@@ -412,10 +412,10 @@ main {
 }
 
 .rowMenuCard .imgBox {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  min-height: 40px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50x;
   border-radius: 100vw;
   display: flex;
   justify-content: center;
@@ -490,8 +490,8 @@ main {
 }
 
 .itemCard {
-  width: 160px;
-  height: 180px;
+  width: 200px;
+  height: 210px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -519,8 +519,8 @@ main {
 
 .itemCard .imgBox {
   position: absolute;
-  top: -10px;
-  width: 100px;
+  top: 30px;
+  width: 120px;
   height: 100px;
   border-radius: 100vw;
   display: flex;

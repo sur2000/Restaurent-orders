@@ -1,10 +1,22 @@
-import React from 'react' 
+import React, { useEffect } from 'react' 
 import {BarChart, SearchRounded, ShoppingCartRounded} from "@mui/icons-material";
 import logo from '../assets/favicon.png'
-import profile from '../assets/girl.jpg'
+import profile from '../assets/girl.jpg' 
+
+import { useStateValue } from "./StateProvider";
 
 
-const Header = () => {
+const Header = () => { 
+
+  const [{ cart }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    const toggleMenu = document.querySelector(".toggleMenu");
+    toggleMenu.addEventListener("click", () => {
+      document.querySelector(".rightMenu").classList.toggle("active");
+    });
+  }, []);
+
   return (
    <header>
        <img  className="logo" src={logo} alt='' />
@@ -16,8 +28,8 @@ const Header = () => {
 
       <div className="shoppingCart">
         <ShoppingCartRounded className="cart" />
-        <div className="cart_content">
-          <p> 5 </p>
+        <div className={`${!cart ? "noCartItem" : "cart_content"}`}>
+          <p>{cart ? cart.length : ""}</p>
         </div>
       </div>
 

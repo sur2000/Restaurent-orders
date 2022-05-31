@@ -130,7 +130,7 @@ header {
   transform: rotate(90deg);
 }
 
-.toggleMenu .toggleIcon {
+.toggleMenu  {
   color: #373848;
   font-size: 30px !important;
 }

@@ -11,8 +11,8 @@ const Header = () => {
   const [{ cart }, dispatch] = useStateValue();
 
   useEffect(() => {
-    const toggleIcon = document.querySelector(".toggleMenu");
-    toggleIcon.addEventListener("click", () => {
+    const toggleMenu = document.querySelector(".toggleMenu");
+    toggleMenu.addEventListener("click", () => {
       document.querySelector(".rightMenu").classList.toggle("active");
     });
   }, []);
@@ -42,7 +42,7 @@ const Header = () => {
       </div>
 
       <div className="toggleMenu">
-        <BarChart className="toggleIcon" />
+        <BarChart />
 
       </div>
    </header>
